@@ -1,0 +1,151 @@
+/* Fonts */
+
+@font-face {
+
+    font-family: Raleway-thin;
+    src: url(../fonts/Raleway-Thin.ttf);
+}
+
+@font-face {
+
+    font-family: Raleway;
+    src: url(../fonts/Raleway-Regular.ttf);
+}
+
+@font-face {
+
+    font-family: Raleway-bold;
+    src: url(../fonts/Raleway-Bold.ttf);
+}
+
+@font-face {
+
+    font-family: Raleway-black;
+    src: url(../fonts/Raleway-Black.ttf);
+}
+
+/* Fonts instellen */
+
+h1, h2, h3 {
+
+    font-family: Raleway-black;
+}
+
+
+p {
+
+    font-family: Raleway;
+}
+
+
+strong {
+
+    font-family: Raleway-bold;
+}
+
+
+/* Website */
+
+
+* {
+
+    box-sizing: border-box;
+}
+
+body {
+
+    line-height: 1.1;
+    font-family: Raleway;
+}
+
+nav {
+    
+    justify-content: center;
+    align-items: center;
+}
+
+nav, nav > ul, main, footer {
+
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+nav li {
+
+    text-transform: capitalize;
+    width: 10%;
+    margin: 0;
+}
+
+.static {
+
+    max-width: 90%;
+    margin: auto;
+}
+
+img {
+    
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+h1, h2, h3 {
+
+    text-align: center;
+    padding: 1%;
+}
+
+h1 {
+    
+    font-size: 3em;
+}
+
+h2 {
+    
+    font-size: 2.8em;
+}
+
+h3 {
+    
+    font-size: 2.6em;
+}
+
+p {
+
+    font-size: 1.4em;
+    text-align: left;
+    padding: 2%;
+}
+
+header {
+    
+    margin-bottom: 10%;
+}
+
+main, footer, #profiel {
+    
+    margin-top: 10%;
+    border-bottom: solid black 1px;
+    border-top: solid black 1px;
+}
+
+/* Text effecten */
+
+strong {
+
+    font-weight: bold;
+}
+
+em {
+
+    font-style: italic;
+}
+
+mark {
+
+    background-color: yellow;
+}
+
+
