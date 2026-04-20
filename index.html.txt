@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <title>Mijn Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- HERO -->
+    <header class="hero">
+        <h1>Jouw Naam</h1>
+        <p>Mijn Portfolio</p>
+    </header>
+
+    <!-- KEUZES -->
+    <div class="buttons">
+        <button onclick="changeImages('set1')">Project 1</button>
+        <button onclick="changeImages('set2')">Project 2</button>
+        <button onclick="changeImages('set3')">Project 3</button>
+    </div>
+
+    <!-- FOTO'S -->
+    <div class="gallery">
+        <img id="img1" src="img1.jpg">
+        <img id="img2" src="img2.jpg">
+        <img id="img3" src="img3.jpg">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
