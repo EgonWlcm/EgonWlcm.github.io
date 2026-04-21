@@ -133,21 +133,25 @@ button.active {
     display: block;
 }
 
-/* de tekst */
+/* tekst standaard verborgen */
 .label {
     position: absolute;
     bottom: 0;
     left: 0;
     width: 100%;
 
-    background: rgba(0, 0, 0, 0.6);
+    background: rgba(0, 0, 0, 0.7);
     color: white;
-    padding: 8px;
+    padding: 10px;
 
-    opacity: 0;
-    transition: 0.3s;
+    opacity: 0;              /* 🔥 verborgen */
+    transition: opacity 0.3s ease;
 }
 
+/* alleen zichtbaar bij hover */
+.image-card:hover .label {
+    opacity: 1;
+}
 
 @media only screen and (max-width: 800px) {
 
