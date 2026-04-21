@@ -49,14 +49,19 @@ function changeImages(set) {
     gallery.innerHTML = "";
 
     // Voeg alle images toe
-    images.forEach(src => {
-        const img = document.createElement("img");
-        img.src = src;
-        img.onclick = function() {
-            openLightbox(src);
-        };
-        
-        gallery.appendChild(img);
+   images.forEach(src => {
+    const img = document.createElement("img");
+    img.src = src;
+
+    img.onerror = function () {
+        this.style.display = "none";
+    };
+
+    img.onclick = function() {
+        openLightbox(src);
+    };
+
+    gallery.appendChild(img);
     });
 }
 
