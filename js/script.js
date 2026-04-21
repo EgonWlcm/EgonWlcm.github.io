@@ -23,38 +23,38 @@ function changeImages(set) {
     if (set === "set1") {
     images.sort(() => Math.random() - 0.5);
         images = [
-            { src: "./img/p1-1.jpg", country: "🇮🇹 Dolomites, Italy" },
-            { src: "./img/p1-5.jpg", country: "🇮🇹 Dolomites, Italy" },
-            { src: "./img/p1-6.jpg", country: "🇮🇹 Dolomites, Italy" },
-            { src: "./img/p1-7.jpg", country: "🇮🇹 Dolomites, Italy" },
-            { src: "./img/p1-10.jpg", country: "🇮🇹 Dolomites, Italy" },
-            { src: "./img/p1-12.jpg", country: "🇮🇹 Dolomites, Italy" },
-            { src: "./img/p1-13.jpg", country: "🇮🇹 Dolomites, Italy" },
-            { src: "./img/p1-14.jpg", country: "🇮🇹 Dolomites, Italy" },
-            { src: "./img/p1-15.jpg", country: "🇮🇹 Dolomites, Italy" },
-            { src: "./img/p1-17.jpg", country: "🇮🇹 Dolomites, Italy" },
-            { src: "./img/p1-22.jpg", country: "🇮🇹 Dolomites, Italy" },
-            { src: "./img/p1-23.jpg", country: "🇮🇹 Dolomites, Italy" },
-            { src: "./img/p1-25.jpg", country: "🇮🇹 Dolomites, Italy" },
-            { src: "./img/p1-26.jpg", country: "🇮🇹 Dolomites, Italy" },
-            { src: "./img/p1-27.jpg", country: "🇮🇹 Dolomites, Italy" },
-            { src: "./img/p1-28.jpg", country: "🇮🇹 Dolomites, Italy" },
-            { src: "./img/p1-29.jpg", country: "🇮🇹 Dolomites, Italy" },
-            { src: "./img/p1-31.jpg", country: "🇮🇹 Dolomites, Italy" },
-            { src: "./img/p1-32.jpg", country: "🇮🇹 Dolomites, Italy" },
-            { src: "./img/p1-35.jpg", country: "🇮🇹 Dolomites, Italy" },
-            { src: "./img/p1-36.jpg", country: "🇮🇹 Dolomites, Italy" },
-            { src: "./img/p1-37.jpg", country: "🇮🇹 Dolomites, Italy" },
-            { src: "./img/p1-39.jpg", country: "🇮🇹 Dolomites, Italy" },
-            { src: "./img/p1-41.jpg", country: "🇮🇹 Dolomites, Italy" },
-            { src: "./img/p1-42.jpg", country: "🇮🇹 Dolomites, Italy" },
-            { src: "./img/p1-43.jpg", country: "🇮🇹 Dolomites, Italy" },
-            { src: "./img/p1-46.jpg", country: "🇮🇹 Dolomites, Italy" },
-            { src: "./img/p1-47.jpg", country: "🇮🇹 Dolomites, Italy" },
-            { src: "./img/p1-51.jpg", country: "🇮🇹 Dolomites, Italy" },
-            { src: "./img/p1-56.jpg", country: "🇮🇹 Dolomites, Italy" },
-            { src: "./img/p1-59.jpg", country: "🇮🇹 Dolomites, Italy" },
-            { src: "./img/p1-61.jpg", country: "🇮🇹 Dolomites, Italy" }
+            { src: "./img/p1-1.jpg", country: "Dolomites, Italy", flag: "it" },
+            { src: "./img/p1-5.jpg", country: "Dolomites, Italy", flag: "it" },
+            { src: "./img/p1-6.jpg", country: "Dolomites, Italy", flag: "it" },
+            { src: "./img/p1-7.jpg", country: "Dolomites, Italy", flag: "it" },
+            { src: "./img/p1-10.jpg", country: "Dolomites, Italy", flag: "it" },
+            { src: "./img/p1-12.jpg", country: "Dolomites, Italy", flag: "it" },
+            { src: "./img/p1-13.jpg", country: "Dolomites, Italy", flag: "it" },
+            { src: "./img/p1-14.jpg", country: "Dolomites, Italy", flag: "it" },
+            { src: "./img/p1-15.jpg", country: "Dolomites, Italy", flag: "it" },
+            { src: "./img/p1-17.jpg", country: "Dolomites, Italy", flag: "it" },
+            { src: "./img/p1-22.jpg", country: "Dolomites, Italy", flag: "it" },
+            { src: "./img/p1-23.jpg", country: "Dolomites, Italy", flag: "it" },
+            { src: "./img/p1-25.jpg", country: "Dolomites, Italy", flag: "it" },
+            { src: "./img/p1-26.jpg", country: "Dolomites, Italy", flag: "it" },
+            { src: "./img/p1-27.jpg", country: "Dolomites, Italy", flag: "it" },
+            { src: "./img/p1-28.jpg", country: "Dolomites, Italy", flag: "it" },
+            { src: "./img/p1-29.jpg", country: "Dolomites, Italy", flag: "it" },
+            { src: "./img/p1-31.jpg", country: "Dolomites, Italy", flag: "it" },
+            { src: "./img/p1-32.jpg", country: "Dolomites, Italy", flag: "it" },
+            { src: "./img/p1-35.jpg", country: "Dolomites, Italy", flag: "it" },
+            { src: "./img/p1-36.jpg", country: "Dolomites, Italy", flag: "it" },
+            { src: "./img/p1-37.jpg", country: "Dolomites, Italy", flag: "it" },
+            { src: "./img/p1-39.jpg", country: "Dolomites, Italy", flag: "it" },
+            { src: "./img/p1-41.jpg", country: "Dolomites, Italy", flag: "it" },
+            { src: "./img/p1-42.jpg", country: "Dolomites, Italy", flag: "it" },
+            { src: "./img/p1-43.jpg", country: "Dolomites, Italy", flag: "it" },
+            { src: "./img/p1-46.jpg", country: "Dolomites, Italy", flag: "it" },
+            { src: "./img/p1-47.jpg", country: "Dolomites, Italy", flag: "it" },
+            { src: "./img/p1-51.jpg", country: "Dolomites, Italy", flag: "it" },
+            { src: "./img/p1-56.jpg", country: "Dolomites, Italy", flag: "it" },
+            { src: "./img/p1-59.jpg", country: "Dolomites, Italy", flag: "it" },
+            { src: "./img/p1-61.jpg", country: "Dolomites, Italy", flag: "it" }
         ];
     
     }
@@ -105,7 +105,7 @@ function changeImages(set) {
     if (country) {
         const label = document.createElement("div");
         label.classList.add("label");
-        label.innerText = country;
+        label.innerHTML = `<img src="https://flagcdn.com/w40/${item.flag}.png"> ${country}`;
         wrapper.appendChild(label);
     }
 
