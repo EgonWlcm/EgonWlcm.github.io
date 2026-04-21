@@ -30,7 +30,7 @@ button:hover {
 }
 
 /* GRID GALERIJ */
-/*
+
 .gallery {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -44,18 +44,6 @@ button:hover {
     object-fit: cover;
     border-radius: 10px;
     transition: transform 0.3s ease;
-}
-*/
-.gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
-    gap: 15px;
-}
-
-.gallery img {
-    width: 100%;
-    aspect-ratio: 4 / 3;
-    object-fit: cover;
 }
 
 .gallery img:hover {
