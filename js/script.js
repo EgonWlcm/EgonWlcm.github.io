@@ -9,7 +9,6 @@ function changeImages(set) {
 
     // dan juiste knop activeren
     if (set === "set1") {    
-        images.sort(() => Math.random() - 0.5);
         document.getElementById("btn1").classList.add("active");
     }
     
@@ -22,7 +21,7 @@ function changeImages(set) {
     }
 
     if (set === "set1") {
-    
+    images.sort(() => Math.random() - 0.5);
         images = [
             { src: "./img/p1-1.jpg", country: "🇮🇹 Dolomites, Italy" },
             { src: "./img/p1-5.jpg", country: "🇮🇹 Dolomites, Italy" },
