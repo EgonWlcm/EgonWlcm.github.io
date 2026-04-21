@@ -1,5 +1,3 @@
-console.log("script geladen");
-
 function changeImages(set) {
     const gallery = document.getElementById("gallery");
 
