@@ -52,8 +52,26 @@ function changeImages(set) {
     images.forEach(src => {
         const img = document.createElement("img");
         img.src = src;
+        img.onclick = function() {
+            openLightbox(src);
+        };
+        
         gallery.appendChild(img);
     });
+}
+
+/* LIGHTBOX 
+
+function openLightbox(src) {
+    const lightbox = document.getElementById("lightbox");
+    const img = document.getElementById("lightbox-img");
+
+    img.src = src;
+    lightbox.style.display = "flex";
+}
+
+function closeLightbox() {
+    document.getElementById("lightbox").style.display = "none";
 }
 
 // Optioneel: laad standaard set bij openen
