@@ -135,24 +135,26 @@ button.active {
 
 /* tekst standaard verborgen */
 .label {
-    font-family: Arial, sans-serif;
+    display: flex;
+    align-items: center;   /* 🔥 dit lijnt alles mooi verticaal uit */
+    gap: 6px;              /* ruimte tussen vlag en tekst */
+
     position: absolute;
     bottom: 0;
     left: 0;
     width: 100%;
 
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(0,0,0,0.7);
     color: white;
     padding: 10px;
 
-    opacity: 0;              /* 🔥 verborgen */
+    opacity: 0;
     transition: opacity 0.3s ease;
 }
 
 .label img {
     width: 20px;
-    margin-right: 6px;
-    vertical-align: middle;
+    height: auto;
 }
 
 /* alleen zichtbaar bij hover */
