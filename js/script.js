@@ -60,7 +60,7 @@ function changeImages(set) {
     });
 }
 
-/* LIGHTBOX 
+/* LIGHTBOX */
 
 function openLightbox(src) {
     const lightbox = document.getElementById("lightbox");
