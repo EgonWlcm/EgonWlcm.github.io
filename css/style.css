@@ -1,0 +1,119 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.name {
+    font-family: "Playfair Display", serif;
+    font-weight: 600;
+    font-size: 24pt;
+}
+
+/* HERO */
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+    /* Remove : linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)) to delete gradient of header picture */
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../img/hero.jpg') center/cover no-repeat;
+    color: white;
+}
+
+/* container voor foto + handtekening */
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* profielfoto (cirkel) */
+.profile-pic {
+    width: 210px;
+    height: 210px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid white;
+}
+
+/* handtekening onder foto */
+.signature {
+    width: 160px;
+    margin-top: -40px;
+    opacity: 0.9;
+}
+
+/* BUTTONS */
+.buttons {
+    margin: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    width: 12%;
+    margin: 5px;
+    border: none;
+    background: black;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background: white;
+    color: black;
+    transform: scale(1.05);
+    border: 2px solid black;
+}
+
+button.active {
+    background: white;
+    color: black;
+    border: 2px solid black;
+}
+
+/* GRID GALERIJ */
+.gallery {
+    padding: 100px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.gallery img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
+
+@media only screen and (max-width: 800px) {
+
+    /* GRID GALERIJ */
+    #gallery {
+        padding: 20px;
+        display: grid;
+        /* Delete line below to leave layout at 3 besides each other */
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    #gallery > img{
+        margin-bottom: 10px;
+    }
+
+    .buttons {
+        margin: 10px;
+    }
+
+    #btn1, #btn2, #btn3 {
+        width: 25%;
+        padding: 15px 20px;
+    }
+    
+
+}
