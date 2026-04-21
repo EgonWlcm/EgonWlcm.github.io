@@ -92,16 +92,9 @@ function changeImages(set) {
     const img = document.createElement("img");
     img.src = src;
 
-    img.onclick = function () {
-    this.parentElement.classList.toggle("show-label");
-    };
-
-    img.onerror = function () {
-        this.style.display = "none";
-    };
-
-    img.onclick = function () {
-        openLightbox(src);
+    /* 🔥 MOBILE CLICK */
+    wrapper.onclick = function () {
+        this.classList.toggle("show-label");
     };
 
     wrapper.appendChild(img);
@@ -109,7 +102,7 @@ function changeImages(set) {
     if (country) {
         const label = document.createElement("div");
         label.classList.add("label");
-        label.innerHTML = `<img src="https://flagcdn.com/w40/${item.flag}.png"> ${country}`;
+        label.innerText = country;
         wrapper.appendChild(label);
     }
 
