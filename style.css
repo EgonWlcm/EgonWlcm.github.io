@@ -6,9 +6,27 @@ body {
 
 /* HERO */
 .hero {
+    text-align: center;
+    padding: 80px 20px;
     background: url('hero.jpg') center/cover no-repeat;
     color: white;
-    padding: 100px 20px;
+}
+
+/* Profielfoto */
+.profile-pic {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid white;
+    margin-bottom: 15px;
+}
+
+/* Handtekening */
+.signature {
+    width: 180px;
+    margin-top: 10px;
+    opacity: 0.9;
 }
 
 /* BUTTONS */
