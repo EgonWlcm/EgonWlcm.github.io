@@ -3,6 +3,23 @@ function changeImages(set) {
 
     let images = [];
 
+    document.getElementById("btn1").classList.remove("active");
+    document.getElementById("btn2").classList.remove("active");
+    document.getElementById("btn3").classList.remove("active");
+
+    // dan juiste knop activeren
+    if (set === "set1") {
+        document.getElementById("btn1").classList.add("active");
+    }
+    
+    if (set === "set2") {
+        document.getElementById("btn2").classList.add("active");
+    }
+    
+    if (set === "set3") {
+        document.getElementById("btn3").classList.add("active");
+    }
+
     if (set === "set1") {
     images = [];
 
