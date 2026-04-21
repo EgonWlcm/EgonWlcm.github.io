@@ -92,6 +92,10 @@ function changeImages(set) {
     const img = document.createElement("img");
     img.src = src;
 
+    img.onclick = function () {
+    this.parentElement.classList.toggle("show-label");
+    };
+
     img.onerror = function () {
         this.style.display = "none";
     };
