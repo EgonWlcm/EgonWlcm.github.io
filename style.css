@@ -4,6 +4,11 @@ body {
     text-align: center;
 }
 
+.name {
+    font-family: "Playfair Display", serif;
+    font-weight: 600;
+}
+
 /* HERO */
 .hero {
     text-align: center;
