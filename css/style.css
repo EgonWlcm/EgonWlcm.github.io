@@ -30,6 +30,15 @@ body {
     border-radius: 10px;
 }
 
+.close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 40px;
+    color: white;
+    cursor: pointer;
+}
+
 /* HERO */
 .hero {
     text-align: center;
