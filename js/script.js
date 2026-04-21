@@ -49,7 +49,11 @@ function changeImages(set) {
     gallery.innerHTML = "";
 
     // Voeg alle images toe
-   images.forEach(src => {
+   images.forEach(item => {
+
+    const src = typeof item === "string" ? item : item.src;
+    const country = typeof item === "string" ? null : item.country;
+
     const img = document.createElement("img");
     img.src = src;
 
@@ -61,8 +65,23 @@ function changeImages(set) {
         openLightbox(src);
     };
 
-    gallery.appendChild(img);
-    });
+    // alleen voor set1 (met country)
+    if (country) {
+        const wrapper = document.createElement("div");
+        wrapper.classList.add("image-card");
+
+        const label = document.createElement("div");
+        label.classList.add("label");
+        label.innerText = country;
+
+        wrapper.appendChild(img);
+        wrapper.appendChild(label);
+        gallery.appendChild(wrapper);
+    } else {
+        gallery.appendChild(img);
+    }
+
+});
 }
 
 /* LIGHTBOX */
