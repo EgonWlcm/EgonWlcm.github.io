@@ -67,7 +67,6 @@ function changeImages(set) {
     "p1-59.jpg",
     "p1-60.jpg",
     "p1-61.jpg"
-];
         ];
     }
 
