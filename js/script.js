@@ -8,7 +8,8 @@ function changeImages(set) {
     document.getElementById("btn3").classList.remove("active");
 
     // dan juiste knop activeren
-    if (set === "set1") {
+    if (set === "set1") {    
+        images.sort(() => Math.random() - 0.5);
         document.getElementById("btn1").classList.add("active");
     }
     
@@ -80,12 +81,14 @@ function changeImages(set) {
     gallery.innerHTML = "";
 
     // Voeg alle images toe
-    images.sort(() => Math.random() - 0.5);
     
     images.forEach(item => {
 
     const src = typeof item === "string" ? item : item.src;
     const country = typeof item === "string" ? null : item.country;
+
+    const wrapper = document.createElement("div");
+    wrapper.classList.add("image-card");
 
     const img = document.createElement("img");
     img.src = src;
@@ -94,26 +97,20 @@ function changeImages(set) {
         this.style.display = "none";
     };
 
-    img.onclick = function() {
+    img.onclick = function () {
         openLightbox(src);
     };
 
-    // alleen voor set1 (met country)
-    if (country) {
-        const wrapper = document.createElement("div");
-        wrapper.classList.add("image-card");
+    wrapper.appendChild(img);
 
+    if (country) {
         const label = document.createElement("div");
         label.classList.add("label");
         label.innerText = country;
-
-        wrapper.appendChild(img);
         wrapper.appendChild(label);
-        gallery.appendChild(wrapper);
-    } else {
-        gallery.appendChild(img);
     }
 
+    gallery.appendChild(wrapper);
 });
 }
 
