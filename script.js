@@ -15,7 +15,7 @@ function changeImages(set) {
     images = [];
 
     for (let i = 1; i <= 106; i++) {
-        images.push(`p1-${i}.jpg`);
+        images.push(`p2-${i}.jpg`);
     }
     }
 
