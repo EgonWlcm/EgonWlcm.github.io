@@ -149,6 +149,12 @@ button.active {
     transition: opacity 0.3s ease;
 }
 
+.label img {
+    width: 20px;
+    margin-right: 6px;
+    vertical-align: middle;
+}
+
 /* alleen zichtbaar bij hover */
 .image-card:hover .label {
     opacity: 1;
