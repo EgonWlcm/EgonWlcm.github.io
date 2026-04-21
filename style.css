@@ -61,6 +61,7 @@ button:hover {
     background: white;
     color: black;
     transform: scale(1.05);
+    border: black;
 }
 
 /* GRID GALERIJ */
