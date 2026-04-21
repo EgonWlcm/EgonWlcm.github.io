@@ -15,8 +15,8 @@ function changeImages(set) {
     if (set === "set2") {
         images = [
             "p2-1.jpg",
-            "p2-2.jpg"
-            "p2-3.jpg"
+            "p2-2.jpg",
+            "p2-3.jpg",
             "p2-4.jpg"
         ];
     }
@@ -26,7 +26,7 @@ function changeImages(set) {
             "p3-1.jpg",
             "p3-2.jpg",
             "p3-3.jpg",
-            "p3-4.jpg",
+            "p3-4.jpg"
         ];
     }
 
