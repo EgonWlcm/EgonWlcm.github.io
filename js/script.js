@@ -21,11 +21,42 @@ function changeImages(set) {
     }
 
     if (set === "set1") {
-    images = [];
-
-    for (let i = 1; i <= 61; i++) {
-        images.push(`./img/p1-${i}.jpg`);
-    }
+    
+        images = [
+            { src: "p1-1.jpg", country: "🇮🇹 Dolomites, Italy" },
+            { src: "p1-5.jpg", country: "🇮🇹 Dolomites, Italy" },
+            { src: "p1-6.jpg", country: "🇮🇹 Dolomites, Italy" },
+            { src: "p1-7.jpg", country: "🇮🇹 Dolomites, Italy" },
+            { src: "p1-10.jpg", country: "🇮🇹 Dolomites, Italy" },
+            { src: "p1-12.jpg", country: "🇮🇹 Dolomites, Italy" },
+            { src: "p1-13.jpg", country: "🇮🇹 Dolomites, Italy" },
+            { src: "p1-14.jpg", country: "🇮🇹 Dolomites, Italy" },
+            { src: "p1-15.jpg", country: "🇮🇹 Dolomites, Italy" },
+            { src: "p1-17.jpg", country: "🇮🇹 Dolomites, Italy" },
+            { src: "p1-22.jpg", country: "🇮🇹 Dolomites, Italy" },
+            { src: "p1-23.jpg", country: "🇮🇹 Dolomites, Italy" },
+            { src: "p1-25.jpg", country: "🇮🇹 Dolomites, Italy" },
+            { src: "p1-26.jpg", country: "🇮🇹 Dolomites, Italy" },
+            { src: "p1-27.jpg", country: "🇮🇹 Dolomites, Italy" },
+            { src: "p1-28.jpg", country: "🇮🇹 Dolomites, Italy" },
+            { src: "p1-29.jpg", country: "🇮🇹 Dolomites, Italy" },
+            { src: "p1-31.jpg", country: "🇮🇹 Dolomites, Italy" },
+            { src: "p1-32.jpg", country: "🇮🇹 Dolomites, Italy" },
+            { src: "p1-35.jpg", country: "🇮🇹 Dolomites, Italy" },
+            { src: "p1-36.jpg", country: "🇮🇹 Dolomites, Italy" },
+            { src: "p1-37.jpg", country: "🇮🇹 Dolomites, Italy" },
+            { src: "p1-39.jpg", country: "🇮🇹 Dolomites, Italy" },
+            { src: "p1-41.jpg", country: "🇮🇹 Dolomites, Italy" },
+            { src: "p1-42.jpg", country: "🇮🇹 Dolomites, Italy" },
+            { src: "p1-43.jpg", country: "🇮🇹 Dolomites, Italy" },
+            { src: "p1-46.jpg", country: "🇮🇹 Dolomites, Italy" },
+            { src: "p1-47.jpg", country: "🇮🇹 Dolomites, Italy" },
+            { src: "p1-51.jpg", country: "🇮🇹 Dolomites, Italy" },
+            { src: "p1-56.jpg", country: "🇮🇹 Dolomites, Italy" },
+            { src: "p1-59.jpg", country: "🇮🇹 Dolomites, Italy" },
+            { src: "p1-61.jpg", country: "🇮🇹 Dolomites, Italy" }
+        ];
+    
     }
 
     if (set === "set2") {
@@ -49,7 +80,9 @@ function changeImages(set) {
     gallery.innerHTML = "";
 
     // Voeg alle images toe
-   images.forEach(item => {
+    images.sort(() => Math.random() - 0.5);
+    
+    images.forEach(item => {
 
     const src = typeof item === "string" ? item : item.src;
     const country = typeof item === "string" ? null : item.country;
