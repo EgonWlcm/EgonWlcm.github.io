@@ -21,7 +21,6 @@ function changeImages(set) {
     }
 
     if (set === "set1") {
-    //images.sort(() => Math.random() - 0.5);
         images = [
             { src: "./img/p1-1.jpg", country: "Dolomites, Italy", flag: "it" },
             { src: "./img/p1-5.jpg", country: "Dolomites, Italy", flag: "it" },
@@ -73,6 +72,7 @@ function changeImages(set) {
             { src: "./img/p1-77.jpg", country: "Iceland", flag: "is" },
             { src: "./img/p1-78.jpg", country: "Iceland", flag: "is" }
         ];
+            images.sort(() => Math.random() - 0.5);
     
     }
 
