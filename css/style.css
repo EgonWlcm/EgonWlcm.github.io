@@ -19,13 +19,10 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-
     background: rgba(0, 0, 0, 0.9);
-
     justify-content: center;
     align-items: center;
-
-    z-index: 9999; /* 🔥 dit is de fix */
+    z-index: 9999;
 }
 
 .lightbox img {
@@ -44,15 +41,14 @@ body {
 }
 
 /* HERO */
+
 .hero {
     text-align: center;
     padding: 80px 20px;
-    /* Remove : linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)) to delete gradient of header picture */
     background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../img/hero.jpg') center/cover no-repeat;
     color: white;
 }
 
-/* container voor foto + handtekening */
 .profile {
     display: flex;
     flex-direction: column;
@@ -60,7 +56,6 @@ body {
     margin-bottom: 20px;
 }
 
-/* profielfoto (cirkel) */
 .profile-pic {
     width: 210px;
     height: 210px;
@@ -69,7 +64,6 @@ body {
     border: 3px solid white;
 }
 
-/* handtekening onder foto */
 .signature {
     width: 160px;
     margin-top: -40px;
@@ -87,6 +81,7 @@ body {
 }
 
 /* BUTTONS */
+
 .buttons {
     margin: 20px;
 }
@@ -99,6 +94,7 @@ button {
     background: black;
     color: white;
     cursor: pointer;
+    transition: 0.3s;
 }
 
 button:hover {
@@ -115,6 +111,7 @@ button.active {
 }
 
 /* GRID GALERIJ */
+
 .gallery {
     padding: 100px;
     display: grid;
@@ -143,11 +140,12 @@ button.active {
     display: block;
 }
 
-/* tekst standaard verborgen */
+/* LABEL */
+
 .label {
     display: flex;
-    align-items: center;   /* 🔥 dit lijnt alles mooi verticaal uit */
-    gap: 6px;              /* ruimte tussen vlag en tekst */
+    align-items: center;
+    gap: 6px;
 
     position: absolute;
     bottom: 0;
@@ -164,15 +162,13 @@ button.active {
 
 .label img {
     width: 20px;
-    height: auto;
 }
 
-/* alleen zichtbaar bij hover */
 .image-card:hover .label {
     opacity: 1;
 }
 
-// Contact form
+/* CONTACT FORM */
 
 .contact-section {
     margin-top: 80px;
@@ -186,43 +182,34 @@ button.active {
     font-size: 28px;
 }
 
-/* form */
 .contact-section form {
     max-width: 500px;
     margin: 0 auto;
 }
 
-/* inputs */
 .contact-section input,
 .contact-section textarea {
     width: 100%;
     padding: 12px;
     margin: 10px 0;
-
     border: 1px solid #ccc;
     border-radius: 8px;
-
     font-size: 14px;
 }
 
-/* textarea groter */
 .contact-section textarea {
     min-height: 120px;
     resize: vertical;
 }
 
-/* button */
 .contact-section button {
     margin-top: 10px;
     padding: 12px 20px;
     width: 20%;
-
     background: black;
     color: white;
-
     border: none;
     border-radius: 8px;
-
     cursor: pointer;
     transition: 0.3s;
 }
@@ -246,7 +233,7 @@ button.active {
     color: black;
 }
 
-//FOOTER
+/* FOOTER */
 
 .footer {
     background-color: black;
@@ -281,18 +268,18 @@ button.active {
     color: #777;
 }
 
+/* MOBILE */
+
 @media only screen and (max-width: 800px) {
 
-    /* GRID GALERIJ */
     #gallery {
         padding: 20px;
         display: grid;
-        /* Delete line below to leave layout at 3 besides each other */
         grid-template-columns: repeat(2, 1fr);
         gap: 20px;
     }
 
-    #gallery > img{
+    #gallery > img {
         margin-bottom: 10px;
     }
 
@@ -305,31 +292,20 @@ button.active {
         padding: 15px 20px;
     }
 
-      .label {
+    .label {
         opacity: 1;
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-
         background: rgba(0, 0, 0, 0);
-        color: white;
-        padding: 10px;
-
-        transition: 0.3s;
     }
 
-    /* wanneer je erop tikt */
     .image-card.show-label .label {
         opacity: 1;
     }
 
     .contact-section button {
-    width: 40%;
+        width: 40%;
     }
 
     .contact-section {
         padding: 40px 15px;
     }
-
 }
