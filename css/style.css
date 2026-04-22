@@ -4,6 +4,10 @@ body {
     text-align: center;
 }
 
+.footer {
+    background: red !important;
+}
+
 .name {
     font-family: "Playfair Display", serif;
     font-weight: 600;
