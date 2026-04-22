@@ -54,7 +54,25 @@ function changeImages(set) {
             { src: "./img/p1-51.jpg", country: "Dolomites, Italy", flag: "it" },
             { src: "./img/p1-56.jpg", country: "Dolomites, Italy", flag: "it" },
             { src: "./img/p1-59.jpg", country: "Dolomites, Italy", flag: "it" },
-            { src: "./img/p1-61.jpg", country: "Dolomites, Italy", flag: "it" }
+            { src: "./img/p1-61.jpg", country: "Dolomites, Italy", flag: "it" },
+            { src: "./img/p1-62.jpg", country: "Iceland", flag: "is" },
+            { src: "./img/p1-63.jpg", country: "Iceland", flag: "is" },
+            { src: "./img/p1-64.jpg", country: "Iceland", flag: "is" },
+            { src: "./img/p1-65.jpg", country: "Iceland", flag: "is" },
+            { src: "./img/p1-66.jpg", country: "Iceland", flag: "is" },
+            { src: "./img/p1-67.jpg", country: "Iceland", flag: "is" },
+            { src: "./img/p1-68.jpg", country: "Iceland", flag: "is" },
+            { src: "./img/p1-69.jpg", country: "Iceland", flag: "is" },
+            { src: "./img/p1-70.jpg", country: "Iceland", flag: "is" },
+            { src: "./img/p1-71.jpg", country: "Iceland", flag: "is" },
+            { src: "./img/p1-72.jpg", country: "Iceland", flag: "is" },
+            { src: "./img/p1-73.jpg", country: "Iceland", flag: "is" },
+            { src: "./img/p1-74.jpg", country: "Iceland", flag: "is" },
+            { src: "./img/p1-75.jpg", country: "Iceland", flag: "is" },
+            { src: "./img/p1-76.jpg", country: "Iceland", flag: "is" },
+            { src: "./img/p1-77.jpg", country: "Iceland", flag: "is" },
+            { src: "./img/p1-78.jpg", country: "Iceland", flag: "is" }
+            images.sort(() => Math.random() - 0.5);
         ];
     
     }
