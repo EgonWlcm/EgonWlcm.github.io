@@ -83,6 +83,7 @@ body {
 .socials img {
     width: 30px;
     cursor: pointer;
+    filter: invert(1);
 }
 
 /* BUTTONS */
