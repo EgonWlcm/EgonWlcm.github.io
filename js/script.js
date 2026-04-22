@@ -72,7 +72,6 @@ function changeImages(set) {
             { src: "./img/p1-76.jpg", country: "Iceland", flag: "is" },
             { src: "./img/p1-77.jpg", country: "Iceland", flag: "is" },
             { src: "./img/p1-78.jpg", country: "Iceland", flag: "is" }
-            images.sort(() => Math.random() - 0.5);
         ];
     
     }
