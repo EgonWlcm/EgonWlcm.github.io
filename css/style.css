@@ -272,6 +272,9 @@ button.active {
     .image-card.show-label .label {
         opacity: 1;
     }
-    
+
+    .contact-section {
+        padding: 40px 15px;
+    }
 
 }
