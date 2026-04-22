@@ -215,6 +215,7 @@ button.active {
 .contact-section button {
     margin-top: 10px;
     padding: 12px 20px;
+    width: 20%;
 
     background: black;
     color: white;
@@ -261,7 +262,7 @@ button.active {
         left: 0;
         width: 100%;
 
-        background: rgba(0, 0, 0, 0.7);
+        background: rgba(0, 0, 0, 0);
         color: white;
         padding: 10px;
 
@@ -272,6 +273,9 @@ button.active {
     .image-card.show-label .label {
         opacity: 1;
     }
+
+    .contact-section button {
+    width: 40%;
 
     .contact-section {
         padding: 40px 15px;
