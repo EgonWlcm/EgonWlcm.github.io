@@ -21,7 +21,7 @@ function changeImages(set) {
     }
 
     if (set === "set1") {
-    images.sort(() => Math.random() - 0.5);
+    //images.sort(() => Math.random() - 0.5);
         images = [
             { src: "./img/p1-1.jpg", country: "Dolomites, Italy", flag: "it" },
             { src: "./img/p1-5.jpg", country: "Dolomites, Italy", flag: "it" },
@@ -68,12 +68,11 @@ function changeImages(set) {
     }
 
     if (set === "set3") {
-        images = [
-            "./img/p3-1.jpg",
-            "./img/p3-2.jpg",
-            "./img/p3-3.jpg",
-            "./img/p3-4.jpg"
-        ];
+    images = [];
+
+    for (let i = 1; i <= 18; i++) {
+        images.push(`./img/p3_${i}.jpg`);
+    }
     }
 
     // Leeg gallery
