@@ -71,7 +71,7 @@ function changeImages(set) {
     images = [];
 
     for (let i = 1; i <= 18; i++) {
-        images.push(`./img/p3_${i}.jpg`);
+        images.push(`./img/p3-${i}.jpg`);
     }
     }
 
