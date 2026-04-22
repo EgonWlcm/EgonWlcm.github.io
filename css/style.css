@@ -326,9 +326,10 @@ button.active {
 
     .contact-section button {
     width: 40%;
+    }
 
     .contact-section {
         padding: 40px 15px;
     }
-}
+
 }
