@@ -76,6 +76,15 @@ body {
     opacity: 0.9;
 }
 
+.socials {
+    margin-top: 10px;
+}
+
+.socials img {
+    width: 30px;
+    cursor: pointer;
+}
+
 /* BUTTONS */
 .buttons {
     margin: 20px;
