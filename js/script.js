@@ -109,15 +109,15 @@ function changeImages(set) {
     img.src = src;
 
     img.onclick = function () {
-    this.parentElement.classList.toggle("show-label");
+    openLightbox(src);
+
+    if (window.innerWidth <= 768) {
+        this.parentElement.classList.toggle("show-label");
+        }
     };
 
     img.onerror = function () {
     this.parentElement.remove(); // 🔥 verwijdert volledige card
-    };
-
-    img.onclick = function () {
-        openLightbox(src);
     };
 
     wrapper.appendChild(img);
