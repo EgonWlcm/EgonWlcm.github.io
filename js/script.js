@@ -96,7 +96,7 @@ function changeImages(set) {
     };
 
     img.onerror = function () {
-        this.style.display = "none";
+    this.parentElement.remove(); // 🔥 verwijdert volledige card
     };
 
     img.onclick = function () {
