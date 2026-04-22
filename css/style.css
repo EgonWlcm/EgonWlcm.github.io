@@ -104,10 +104,6 @@ button.active {
     border: 2px solid black;
 }
 
-img {
-    pointer-events: none;
-}
-
 /* GRID GALERIJ */
 .gallery {
     padding: 100px;
